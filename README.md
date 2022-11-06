@@ -32,7 +32,10 @@
 
 パネルの配置を保存する場合、アプリを閉じた後に CustomInputMonitor.exe と同じフォルダ内にある layout.cinm をコピーして別名で保存してください。
 .cinm ファイルを CustomInputMonitor.exe にドロップすると、保存したパネルレイアウトを読み込みます。
-同梱されている jis.cinm は日本語キーボードの一般的な配列、qwerty.cinm はQWERTY 配列です。
+
+日本語キーボードの一般的な配列 jis.cinm を同梱しています。(誰かUSキーボード配列作って…)
+
+![jis](./mdsrc/jis.png)
 
 ### 色とフォントのカスタマイズ
 

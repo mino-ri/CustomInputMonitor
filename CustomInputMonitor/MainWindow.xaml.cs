@@ -46,8 +46,8 @@ public partial class MainWindow : Window
         if (x == 0 && y == 0) return;
         if (sender is not FrameworkElement { DataContext: InputViewModel vm }) return;
 
-        vm.Width = Math.Max(32.0, vm.Width + x);
-        vm.Height = Math.Max(32.0, vm.Height + y);
+        vm.Width = Math.Max(24.0, vm.Width + x);
+        vm.Height = Math.Max(24.0, vm.Height + y);
     }
 
     private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
