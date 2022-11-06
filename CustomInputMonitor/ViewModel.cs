@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Threading;
 
 namespace CustomInputMonitor;
@@ -59,6 +60,25 @@ public sealed class ViewModel : ViewModelBase, IDisposable
             _ => new InputViewModel(),
         };
         input.Caption = GetCaption(value);
+        if (Inputs.Count != 0)
+        {
+            InputViewModel? maxInput = null;
+            foreach (var vm in Inputs)
+            {
+                if (maxInput is null)
+                {
+                    maxInput = vm;
+                }
+                else if (maxInput.Top < vm.Top || maxInput.Top == vm.Top && maxInput.Left < vm.Left)
+                {
+                    maxInput = vm;
+                }
+            }
+
+            input.Top = maxInput!.Top;
+            input.Left = maxInput.Left + maxInput.Width;
+        }
+
         Inputs.Add(input);
 
         Inputting = false;

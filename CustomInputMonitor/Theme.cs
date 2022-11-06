@@ -17,10 +17,10 @@ public class ThemeDefinition
     {
         Instance = DataPath.LoadJson<ThemeDefinition>(DataPath.Theme) ?? new ThemeDefinition
         {
-            Background = "#FF000000",
+            Background = "#FFE1E1E0",
             Text = "#FFFFFFFF",
-            Released = "#FF2F4F4F",
-            Pressed = "#FFD2691E",
+            Released = "#FF3E6A28",
+            Pressed = "#FFF29100",
             Font = "Meiryo UI",
         };
     }
@@ -54,10 +54,10 @@ public static class Theme
 
         var converter = new BrushConverter();
         var definition = ThemeDefinition.Instance;
-        Background = CreateBrush(definition.Background, converter) ?? Brushes.Black;
-        Text = CreateBrush(definition.Text, converter) ?? Brushes.White;
-        Released = CreateBrush(definition.Released, converter) ?? Brushes.DarkSlateGray;
-        Pressed = CreateBrush(definition.Pressed, converter) ?? Brushes.Chocolate;
+        Background = CreateBrush(definition.Background, converter) ?? CreateBrush("#FFE0E0E0", converter)!;
+        Text = CreateBrush(definition.Text, converter) ?? CreateBrush("#FFFFFFFF", converter)!;
+        Released = CreateBrush(definition.Released, converter) ?? CreateBrush("#FF3E6A28", converter)!;
+        Pressed = CreateBrush(definition.Pressed, converter) ?? CreateBrush("#FFFFAE00", converter)!;
         Close = CreateBrush("#FFE81123", converter)!;
         FontFamily? font;
         try

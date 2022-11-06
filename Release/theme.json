@@ -1,7 +1,7 @@
 {
-  "Background": "#FF000000",
+  "Background": "#FFE1E1E0",
   "Text": "#FFFFFFFF",
-  "Released": "#FF2F4F4F",
-  "Pressed": "#FFD2691E",
-  "Font": "Segoe UI"
+  "Released": "#FF3E6A28",
+  "Pressed": "#FFF29100",
+  "Font": "Meiryo UI"
 }

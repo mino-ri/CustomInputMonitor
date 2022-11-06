@@ -58,27 +58,27 @@
                                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                         </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="{x:Static local:Theme.Close}" />
-                                <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{x:Static Brushes.White}" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="{x:Static local:Theme.Pressed}" />
-                                <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{x:Static local:Theme.Text}" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{x:Static local:Theme.Close}" />
+                    <Setter Property="Foreground" Value="{x:Static Brushes.White}" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="{x:Static local:Theme.Pressed}" />
+                    <Setter Property="Foreground" Value="{x:Static local:Theme.Text}" />
+                </Trigger>
+            </Style.Triggers>
         </Style>
         <Style TargetType="{x:Type Button}">
             <Setter Property="OverridesDefaultStyle" Value="True" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="Background" Value="{x:Static local:Theme.Background}" />
-            <Setter Property="Foreground" Value="{x:Static local:Theme.Text}" />
-            <Setter Property="BorderBrush" Value="{x:Static local:Theme.Text}" />
+            <Setter Property="Background" Value="{x:Static Brushes.RoyalBlue}" />
+            <Setter Property="Foreground" Value="{x:Static Brushes.White}" />
+            <Setter Property="BorderBrush" Value="{x:Static local:Theme.Background}" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="Template">
                 <Setter.Value>
@@ -89,6 +89,7 @@
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Background="{TemplateBinding Background}"
                             Padding="{TemplateBinding Padding}"
+                            CornerRadius="5"
                             SnapsToDevicePixels="True">
                             <ContentPresenter
                                 Content="{TemplateBinding Content}"
@@ -98,19 +99,19 @@
                                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                         </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="{x:Static local:Theme.Released}" />
-                                <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{x:Static local:Theme.Text}" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="{x:Static local:Theme.Pressed}" />
-                                <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{x:Static local:Theme.Text}" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{x:Static local:Theme.Released}" />
+                    <Setter Property="Foreground" Value="{x:Static local:Theme.Text}" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="{x:Static local:Theme.Pressed}" />
+                    <Setter Property="Foreground" Value="{x:Static local:Theme.Text}" />
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <local:ViewModel x:Key="MainViewModel" />

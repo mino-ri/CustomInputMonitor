@@ -16,7 +16,7 @@
 ■操作方法
 アプリを開いて Enter キーを押すと「Press a KEY or a MOUSE BUTTON to monitor」と表示されます。
 (Fnキーを使った複合入力をモニタリングする場合、Enter のかわりに Fn + Enter を押し、Fnキーを押しっぱなしにしてください)
-この画面で表示したいキーまたはマウスのボタンを押すと、左上にパネルが追加されます。
+この画面で表示したいキーまたはマウスのボタンを押すと、パネルが追加されます。
 ※キーコードなどの動作によって、一気に複数のパネルが追加される場合があります。
 
 パネルをダブルクリック : 表示テキストを編集できます。
@@ -29,6 +29,13 @@
 ■色とフォントのカスタマイズ
 theme.json をテキストエディタなどで開いて変更してください。
 
+■利用規約
+商用・非商用によらず、動画やライブの作成に自由にお使いいただけます。
+事前連絡や許可は不要ですが、動画やライブの"説明欄"などに製作者の Twitter・YouTube などのリンクを貼っていただけると嬉しいです(強制ではありません)。
+
+本ソフトウェアを利用して発生したいかなる損害においても、作者は責任を負いません。
+ソフトウェアの性質上、特にパスワード入力には十分にお気を付けください。
+
 ===================================================
 ■Author: 豊穣ミノリ (HOJO, Minori)
 　□Twitter: @hojo_origami
@@ -37,7 +44,7 @@ theme.json をテキストエディタなどで開いて変更してください
              https://www.youtube.com/HojoMinori
 ■System requirements:
 　□Windows10+
-　□.NET 6S
+　□.NET 6
 
 ■Summary
 This app monitors keyboard and mouse input in real time.
@@ -46,7 +53,7 @@ You can customize the layout.
 ■Instructions
 Press the Enter key to display "Press a KEY or a MOUSE BUTTON to monitor".
 (If you want to monitor compound input using the Fn key, press Fn + Enter instead of Enter and hold Fn.)
-And press a key or a mouse button that you want to monitor, a panel that monitors the target key or button will be added to the upper left.
+Then press a key or a mouse button that you want to monitor, a panel that monitors the target key or button will be added.
 
 Double-click the panel to edit its text.
 Click the panel and press delete to remove it.
@@ -56,3 +63,10 @@ Drop the .cinm file into CustomInputMonitor.exe to load the saved panel layout.
 
 ■Customize colors and fonts
 Modify theme.json with a text editor.
+
+■Terms of Use
+Free to use this software to create videos, live or otherwise, for commercial or non-commercial purposes.
+I would appreciate it if you could post links to my Twitter, YouTube, etc. in the "description" section (optional).
+
+I am not responsible for any damage caused by using this software.
+Due to the nature of the software, please be especially careful when entering your passwords.

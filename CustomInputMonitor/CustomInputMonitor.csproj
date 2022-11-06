@@ -9,11 +9,20 @@
     <InformationalVersion>1.0.0</InformationalVersion>
     <Authors>豊穣ミノリ</Authors>
     <Copyright>© 2022 豊穣ミノリ</Copyright>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon.png" />
+  </ItemGroup>
 
 </Project>

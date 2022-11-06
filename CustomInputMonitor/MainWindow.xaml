@@ -13,6 +13,7 @@
     Topmost="True"
     SnapsToDevicePixels="True"
     UseLayoutRounding="True"
+    Icon="icon.png"
     FontFamily="{x:Static local:Theme.Font}"
     Background="{x:Static local:Theme.Background}"
     DataContext="{StaticResource MainViewModel}"
