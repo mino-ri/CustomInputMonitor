@@ -1,0 +1,30 @@
+{
+  "Inputs": [
+    {
+      "TargetKey": 1,
+      "Caption": "L",
+      "Left": 0,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 2,
+      "Caption": "R",
+      "Left": 48,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 4,
+      "Caption": "M",
+      "Left": 24,
+      "Top": 48,
+      "Width": 48,
+      "Height": 48
+    }
+  ],
+  "Width": 132,
+  "Height": 100
+}

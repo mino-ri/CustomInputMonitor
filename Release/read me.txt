@@ -10,18 +10,20 @@
 　□.NET 6
 
 ■説明
-キーボード入力をリアルタイムに表示するアプリです。
-キーのレイアウトをカスタマイズできます。
+キーボードとマウスの入力をリアルタイムに表示するアプリです。
+レイアウトをカスタマイズできます。
 
 ■操作方法
-アプリを開いて Enter キーを押すと「Press a key to monitor」と表示されます。
-この画面で表示したいキーを押すと、左上に対象のキーが追加されます。
+アプリを開いて Enter キーを押すと「Press a KEY or a MOUSE BUTTON to monitor」と表示されます。
+(Fnキーを使った複合入力をモニタリングする場合、Enter のかわりに Fn + Enter を押し、Fnキーを押しっぱなしにしてください)
+この画面で表示したいキーまたはマウスのボタンを押すと、左上にパネルが追加されます。
+※キーコードなどの動作によって、一気に複数のパネルが追加される場合があります。
 
-キーをダブルクリック : 表示テキストを編集できます。
-キーをクリックしてDeleteキー : キーを削除します。
+パネルをダブルクリック : 表示テキストを編集できます。
+パネルをクリックしてDeleteキー : キーを削除します。
 
-キーの配置を保存する場合、アプリを閉じた後に CustomInputMonitor.exe と同じフォルダ内にある layout.cinm をコピーして別名で保存してください。
-.cinm ファイルを CustomInputMonitor.exe にドロップすると、保存したキー配列を読み込みます。
+パネルの配置を保存する場合、アプリを閉じた後に CustomInputMonitor.exe と同じフォルダ内にある layout.cinm をコピーして別名で保存してください。
+.cinm ファイルを CustomInputMonitor.exe にドロップすると、保存したパネルレイアウトを読み込みます。
 同梱されている jis.cinm は日本語キーボードの一般的な配列、qwerty.cinm はQWERTY 配列です。
 
 ■色とフォントのカスタマイズ
@@ -35,22 +37,22 @@ theme.json をテキストエディタなどで開いて変更してください
              https://www.youtube.com/HojoMinori
 ■System requirements:
 　□Windows10+
-　□.NET 6
-Custom Input Monitor
+　□.NET 6S
 
 ■Summary
-This app monitors keyboard input in real time.
-You can customize the layout of keys.
+This app monitors keyboard and mouse input in real time.
+You can customize the layout.
 
 ■Instructions
-Press the Enter key to display "Press a key to monitor".
-And  press a key that you want to monitor, the target key will be added to the upper left.
+Press the Enter key to display "Press a KEY or a MOUSE BUTTON to monitor".
+(If you want to monitor compound input using the Fn key, press Fn + Enter instead of Enter and hold Fn.)
+And press a key or a mouse button that you want to monitor, a panel that monitors the target key or button will be added to the upper left.
 
-Double-click the key to edit its text.
-Click the key and press delete to remove it.
+Double-click the panel to edit its text.
+Click the panel and press delete to remove it.
 
-To save the key layout, close the app and copy layout.cinm (located in the same folder as CustomInputMonitor.exe) and rename it.
-Drop the .cinm file into CustomInputMonitor.exe to load the saved key layout.
+To save the panel layout, close the app and copy layout.cinm (located in the same folder as CustomInputMonitor.exe) and rename it.
+Drop the .cinm file into CustomInputMonitor.exe to load the saved panel layout.
 
 ■Customize colors and fonts
 Modify theme.json with a text editor.

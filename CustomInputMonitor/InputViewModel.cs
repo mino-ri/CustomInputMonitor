@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using System.Windows.Input;
 
 namespace CustomInputMonitor;
 
@@ -7,15 +6,11 @@ public class InputViewModel : ViewModelBase
 {
     public InputViewModel()
     {
-        _targetKey = Key.None;
-        _targetButton = (MouseButton)(-1);
+        _targetKey = VirtualKeyCode.None;
     }
 
-    private Key _targetKey;
-    public Key TargetKey { get => _targetKey; set => SetValue(ref _targetKey, value); }
-
-    private MouseButton _targetButton;
-    public MouseButton TargetButton { get => _targetButton; set => SetValue(ref _targetButton, value); }
+    private VirtualKeyCode _targetKey;
+    public VirtualKeyCode TargetKey { get => _targetKey; set => SetValue(ref _targetKey, value); }
 
     private string _caption = "";
     public string Caption { get => _caption; set => SetValue(ref _caption, value); }

@@ -17,7 +17,6 @@
     Background="{x:Static local:Theme.Background}"
     DataContext="{StaticResource MainViewModel}"
     ContentRendered="Window_ContentRendered"
-    PreviewKeyDown="Window_PreviewKeyDown"
     SizeChanged="Window_SizeChanged"
     Deactivated="Window_Deactivated"
     DragEnter="Window_DragEnter"
@@ -150,7 +149,7 @@
             VerticalContentAlignment="Stretch"
             IsTabStop="False">
             <Viewbox>
-                <TextBlock Text="Press a key to monitor" />
+                <TextBlock Text="Press a KEY or a MOUSE BUTTON to monitor" />
             </Viewbox>
         </Label>
         <Button

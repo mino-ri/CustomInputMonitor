@@ -46,32 +46,8 @@ public partial class MainWindow : Window
         if (x == 0 && y == 0) return;
         if (sender is not FrameworkElement { DataContext: InputViewModel vm }) return;
 
-        vm.Width += x;
-        vm.Height += y;
-    }
-
-    private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
-    {
-        var viewModel = (ViewModel)DataContext;
-        if (!viewModel.Inputting) return;
-        viewModel.AddInput(
-            e.Key switch
-            {
-                Key.System => e.SystemKey,
-                Key.ImeProcessed => e.ImeProcessedKey,
-                Key.DeadCharProcessed => e.DeadCharProcessedKey,
-                var key => key,
-            });
-        e.Handled = true;
-    }
-
-    private void Window_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-    {
-        var viewModel = (ViewModel)DataContext;
-        if (!viewModel.Inputting) return;
-
-        viewModel.AddInput(e.ChangedButton);
-        e.Handled = true;
+        vm.Width = Math.Max(32.0, vm.Width + x);
+        vm.Height = Math.Max(32.0, vm.Height + y);
     }
 
     private void Window_SizeChanged(object sender, SizeChangedEventArgs e)

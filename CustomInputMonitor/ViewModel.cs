@@ -11,9 +11,12 @@ public sealed class ViewModel : ViewModelBase, IDisposable
     private readonly DispatcherTimer _timer;
     private readonly ActionCommand _addCommand;
     private readonly ActionCommand _removeCommand;
+    private readonly byte[] _keyStates0 = new byte[256];
+    private readonly byte[] _keyStates1 = new byte[256];
+    private bool _keyStateFlag;
 
     private bool _inputting;
-    public bool Inputting { get => _inputting; set => SetValue(ref _inputting, value); }
+    public bool Inputting { get => _inputting; private set => SetValue(ref _inputting, value); }
 
     private double _width = 488;
     public double Width { get => _width; set => SetValue(ref _width, value); }
@@ -38,9 +41,13 @@ public sealed class ViewModel : ViewModelBase, IDisposable
 
     public void BeginAddCommand(object? value)
     {
-        Inputting = true;
+        _keyStateFlag = false;
+        WinApi.GetKeyboardState(_keyStates0);
+        _keyStates0.CopyTo(_keyStates1.AsSpan());
+
         _addCommand.SetCanExecute(false);
         _removeCommand.SetCanExecute(false);
+        Inputting = true;
     }
 
     public void AddInput(object? value)
@@ -48,8 +55,7 @@ public sealed class ViewModel : ViewModelBase, IDisposable
         var input = value switch
         {
             InputViewModel inputViewModel => inputViewModel,
-            Key key => new InputViewModel { TargetKey = key },
-            MouseButton button => new InputViewModel { TargetButton = button },
+            VirtualKeyCode key => new InputViewModel { TargetKey = key },
             _ => new InputViewModel(),
         };
         input.Caption = GetCaption(value);
@@ -103,70 +109,69 @@ public sealed class ViewModel : ViewModelBase, IDisposable
     {
         foreach (var input in Inputs)
         {
-            if (input.TargetKey != Key.None)
-            {
-                input.IsPressed = Keyboard.IsKeyDown(input.TargetKey);
-            }
-            // ウィンドウ外で押されたボタンが取得できない
-            else if (input.TargetButton != (MouseButton)(-1))
-            {
-                var targetState = input.TargetButton switch
-                {
-                    MouseButton.Left => Mouse.PrimaryDevice.LeftButton,
-                    MouseButton.Middle => Mouse.PrimaryDevice.MiddleButton,
-                    MouseButton.Right => Mouse.PrimaryDevice.RightButton,
-                    MouseButton.XButton1 => Mouse.PrimaryDevice.XButton1,
-                    MouseButton.XButton2 => Mouse.PrimaryDevice.XButton2,
-                    _ => MouseButtonState.Released,
-                };
+            var v = WinApi.GetAsyncKeyState(input.TargetKey);
+            input.IsPressed = v < 0;
+        }
 
-                input.IsPressed = targetState == MouseButtonState.Pressed;
+        if (Inputting)
+        {
+            _keyStateFlag = !_keyStateFlag;
+            var currentKeyState = _keyStateFlag ? _keyStates0 : _keyStates1;
+            WinApi.GetKeyboardState(currentKeyState);
+            var oldKeyState = _keyStateFlag ? _keyStates1 : _keyStates0;
+
+            for (var i = 0; i < 256; i++)
+            {
+                if (currentKeyState[i] >= 0b1000_0000 && oldKeyState[i] < 0b1000_0000)
+                {
+                    AddInput((VirtualKeyCode)i);
+                }
             }
         }
     }
 
     private string GetCaption(object? value)
     {
-        if (value is Key key)
+        if (value is VirtualKeyCode key)
         {
             return key switch
             {
-                Key.D0 => "0",
-                Key.D1 => "1",
-                Key.D2 => "2",
-                Key.D3 => "3",
-                Key.D4 => "4",
-                Key.D5 => "5",
-                Key.D6 => "6",
-                Key.D7 => "7",
-                Key.D8 => "8",
-                Key.D9 => "9",
-                Key.NumPad0 => "0",
-                Key.NumPad1 => "1",
-                Key.NumPad2 => "2",
-                Key.NumPad3 => "3",
-                Key.NumPad4 => "4",
-                Key.NumPad5 => "5",
-                Key.NumPad6 => "6",
-                Key.NumPad7 => "7",
-                Key.NumPad8 => "8",
-                Key.NumPad9 => "9",
-                Key.Add => "+",
-                Key.Subtract => "-",
-                Key.Multiply => "*",
-                Key.Divide => "/",
-                Key.OemBackslash => "\\",
-                Key.OemCloseBrackets => "]",
-                Key.OemComma => ",",
-                Key.OemMinus => "-",
-                Key.OemOpenBrackets => "[",
-                Key.OemPeriod => ".",
-                Key.OemPipe => "|",
-                Key.OemPlus => "+",
-                Key.OemQuestion => "?",
-                Key.OemQuotes => "\"",
-                Key.OemSemicolon => ";",
-                Key.OemTilde => "'",
+                VirtualKeyCode.D0 => "0",
+                VirtualKeyCode.D1 => "1",
+                VirtualKeyCode.D2 => "2",
+                VirtualKeyCode.D3 => "3",
+                VirtualKeyCode.D4 => "4",
+                VirtualKeyCode.D5 => "5",
+                VirtualKeyCode.D6 => "6",
+                VirtualKeyCode.D7 => "7",
+                VirtualKeyCode.D8 => "8",
+                VirtualKeyCode.D9 => "9",
+                VirtualKeyCode.Numpad0 => "0",
+                VirtualKeyCode.Numpad1 => "1",
+                VirtualKeyCode.Numpad2 => "2",
+                VirtualKeyCode.Numpad3 => "3",
+                VirtualKeyCode.Numpad4 => "4",
+                VirtualKeyCode.Numpad5 => "5",
+                VirtualKeyCode.Numpad6 => "6",
+                VirtualKeyCode.Numpad7 => "7",
+                VirtualKeyCode.Numpad8 => "8",
+                VirtualKeyCode.Numpad9 => "9",
+                VirtualKeyCode.Add => "+",
+                VirtualKeyCode.Subtract => "-",
+                VirtualKeyCode.Multiply => "*",
+                VirtualKeyCode.Divide => "/",
+                VirtualKeyCode.OemComma => ",",
+                VirtualKeyCode.OemMinus => "-",
+                VirtualKeyCode.OemPeriod => ".",
+                VirtualKeyCode.OemPlus => "+",
+                VirtualKeyCode.Oem1 => ":",
+                VirtualKeyCode.Oem2 => "?",
+                VirtualKeyCode.Oem3 => "@",
+                VirtualKeyCode.Oem4 => "[",
+                VirtualKeyCode.Oem5 => "|",
+                VirtualKeyCode.Oem6 => "]",
+                VirtualKeyCode.Oem7 => "~",
+                VirtualKeyCode.Oem102 => "\\",
                 _ => key.ToString(),
             };
         }
