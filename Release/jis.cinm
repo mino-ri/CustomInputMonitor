@@ -433,14 +433,6 @@
       "Height": 48
     },
     {
-      "TargetKey": 9,
-      "Caption": "CapsLock",
-      "Left": 0,
-      "Top": 156,
-      "Width": 84,
-      "Height": 48
-    },
-    {
       "TargetKey": 160,
       "Caption": "Shift",
       "Left": 0,
@@ -585,54 +577,6 @@
       "Height": 48
     },
     {
-      "TargetKey": 65,
-      "Caption": "\u7121\u5909\u63DB",
-      "Left": 168,
-      "Top": 252,
-      "Width": 60,
-      "Height": 48
-    },
-    {
-      "TargetKey": 65,
-      "Caption": "\u5909\u63DB",
-      "Left": 396,
-      "Top": 252,
-      "Width": 60,
-      "Height": 48
-    },
-    {
-      "TargetKey": 65,
-      "Caption": "\u30AB\u30CA\r\n\u304B\u306A",
-      "Left": 456,
-      "Top": 252,
-      "Width": 48,
-      "Height": 48
-    },
-    {
-      "TargetKey": 65,
-      "Caption": "Alt",
-      "Left": 504,
-      "Top": 252,
-      "Width": 48,
-      "Height": 48
-    },
-    {
-      "TargetKey": 65,
-      "Caption": "Win",
-      "Left": 552,
-      "Top": 252,
-      "Width": 48,
-      "Height": 48
-    },
-    {
-      "TargetKey": 65,
-      "Caption": "App",
-      "Left": 600,
-      "Top": 252,
-      "Width": 48,
-      "Height": 48
-    },
-    {
       "TargetKey": 145,
       "Caption": "Scroll",
       "Left": 792,
@@ -642,7 +586,7 @@
     },
     {
       "TargetKey": 144,
-      "Caption": "Numlock",
+      "Caption": "Num\r\nlock",
       "Left": 912,
       "Top": 60,
       "Width": 48,
@@ -869,6 +813,62 @@
       "Caption": "Esc",
       "Left": 0,
       "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 20,
+      "Caption": "CapsLock",
+      "Left": 0,
+      "Top": 156,
+      "Width": 84,
+      "Height": 48
+    },
+    {
+      "TargetKey": 29,
+      "Caption": "\u7121\u5909\u63DB",
+      "Left": 168,
+      "Top": 252,
+      "Width": 60,
+      "Height": 48
+    },
+    {
+      "TargetKey": 28,
+      "Caption": " \u5909\u63DB ",
+      "Left": 396,
+      "Top": 252,
+      "Width": 60,
+      "Height": 48
+    },
+    {
+      "TargetKey": 242,
+      "Caption": "\u30AB\u30CA/\r\n\u304B\u306A",
+      "Left": 456,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 165,
+      "Caption": "Alt",
+      "Left": 504,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 93,
+      "Caption": "Apps",
+      "Left": 600,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 92,
+      "Caption": "Win",
+      "Left": 552,
+      "Top": 252,
       "Width": 48,
       "Height": 48
     }
