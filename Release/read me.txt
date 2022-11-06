@@ -1,0 +1,56 @@
+■read me - Custom Input Monitor
+
+■製作者: 豊穣ミノリ
+　□Twitter: @hojo_origami
+　□GitHub: https://github.com/mino-ri/CustomInputMonitor
+　□YouTube: https://www.youtube.com/HojoOrigami
+             https://www.youtube.com/HojoMinori
+■動作環境:
+　□Windows10+
+　□.NET 6
+
+■説明
+キーボード入力をリアルタイムに表示するアプリです。
+キーのレイアウトをカスタマイズできます。
+
+■操作方法
+アプリを開いて Enter キーを押すと「Press a key to monitor」と表示されます。
+この画面で表示したいキーを押すと、左上に対象のキーが追加されます。
+
+キーをダブルクリック : 表示テキストを編集できます。
+キーをクリックしてDeleteキー : キーを削除します。
+
+キーの配置を保存する場合、アプリを閉じた後に CustomInputMonitor.exe と同じフォルダ内にある layout.cinm をコピーして別名で保存してください。
+.cinm ファイルを CustomInputMonitor.exe にドロップすると、保存したキー配列を読み込みます。
+同梱されている jis.cinm は日本語キーボードの一般的な配列、qwerty.cinm はQWERTY 配列です。
+
+■色とフォントのカスタマイズ
+theme.json をテキストエディタなどで開いて変更してください。
+
+===================================================
+■Author: 豊穣ミノリ (HOJO, Minori)
+　□Twitter: @hojo_origami
+　□GitHub: https://github.com/mino-ri/CustomInputMonitor
+　□YouTube: https://www.youtube.com/HojoOrigami
+             https://www.youtube.com/HojoMinori
+■System requirements:
+　□Windows10+
+　□.NET 6
+Custom Input Monitor
+
+■Summary
+This app monitors keyboard input in real time.
+You can customize the layout of keys.
+
+■Instructions
+Press the Enter key to display "Press a key to monitor".
+And  press a key that you want to monitor, the target key will be added to the upper left.
+
+Double-click the key to edit its text.
+Click the key and press delete to remove it.
+
+To save the key layout, close the app and copy layout.cinm (located in the same folder as CustomInputMonitor.exe) and rename it.
+Drop the .cinm file into CustomInputMonitor.exe to load the saved key layout.
+
+■Customize colors and fonts
+Modify theme.json with a text editor.

@@ -1,0 +1,942 @@
+{
+  "Inputs": [
+    {
+      "TargetKey": 6,
+      "TargetButton": -1,
+      "Caption": "Enter",
+      "Left": 660,
+      "Top": 108,
+      "Width": 60,
+      "Height": 96
+    },
+    {
+      "TargetKey": 36,
+      "TargetButton": -1,
+      "Caption": "2",
+      "Left": 96,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 37,
+      "TargetButton": -1,
+      "Caption": "3",
+      "Left": 144,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 38,
+      "TargetButton": -1,
+      "Caption": "4",
+      "Left": 192,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 39,
+      "TargetButton": -1,
+      "Caption": "5",
+      "Left": 240,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 40,
+      "TargetButton": -1,
+      "Caption": "6",
+      "Left": 288,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 41,
+      "TargetButton": -1,
+      "Caption": "7",
+      "Left": 336,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 42,
+      "TargetButton": -1,
+      "Caption": "8",
+      "Left": 384,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 43,
+      "TargetButton": -1,
+      "Caption": "9",
+      "Left": 432,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 34,
+      "TargetButton": -1,
+      "Caption": "0",
+      "Left": 480,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 146,
+      "TargetButton": -1,
+      "Caption": "@",
+      "Left": 552,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 152,
+      "TargetButton": -1,
+      "Caption": "^",
+      "Left": 576,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 150,
+      "TargetButton": -1,
+      "Caption": "\\",
+      "Left": 624,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 2,
+      "TargetButton": -1,
+      "Caption": "Back\r\nSpace",
+      "Left": 672,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 35,
+      "TargetButton": -1,
+      "Caption": "1",
+      "Left": 48,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 143,
+      "TargetButton": -1,
+      "Caption": "-",
+      "Left": 528,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 60,
+      "TargetButton": -1,
+      "Caption": "Q",
+      "Left": 72,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 66,
+      "TargetButton": -1,
+      "Caption": "W",
+      "Left": 120,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 48,
+      "TargetButton": -1,
+      "Caption": "E",
+      "Left": 168,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 61,
+      "TargetButton": -1,
+      "Caption": "R",
+      "Left": 216,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 63,
+      "TargetButton": -1,
+      "Caption": "T",
+      "Left": 264,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 68,
+      "TargetButton": -1,
+      "Caption": "Y",
+      "Left": 312,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 52,
+      "TargetButton": -1,
+      "Caption": "I",
+      "Left": 408,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 64,
+      "TargetButton": -1,
+      "Caption": "U",
+      "Left": 360,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 58,
+      "TargetButton": -1,
+      "Caption": "O",
+      "Left": 456,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 59,
+      "TargetButton": -1,
+      "Caption": "P",
+      "Left": 504,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 149,
+      "TargetButton": -1,
+      "Caption": "[",
+      "Left": 600,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 151,
+      "TargetButton": -1,
+      "Caption": "]",
+      "Left": 612,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 141,
+      "TargetButton": -1,
+      "Caption": ";",
+      "Left": 516,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 142,
+      "TargetButton": -1,
+      "Caption": ",",
+      "Left": 444,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 144,
+      "TargetButton": -1,
+      "Caption": ".",
+      "Left": 492,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 154,
+      "TargetButton": -1,
+      "Caption": "_",
+      "Left": 588,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 140,
+      "TargetButton": -1,
+      "Caption": ":",
+      "Left": 564,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 44,
+      "TargetButton": -1,
+      "Caption": "A",
+      "Left": 84,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 62,
+      "TargetButton": -1,
+      "Caption": "S",
+      "Left": 132,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 47,
+      "TargetButton": -1,
+      "Caption": "D",
+      "Left": 180,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 57,
+      "TargetButton": -1,
+      "Caption": "N",
+      "Left": 348,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 50,
+      "TargetButton": -1,
+      "Caption": "G",
+      "Left": 276,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 51,
+      "TargetButton": -1,
+      "Caption": "H",
+      "Left": 324,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 53,
+      "TargetButton": -1,
+      "Caption": "J",
+      "Left": 372,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 54,
+      "TargetButton": -1,
+      "Caption": "K",
+      "Left": 420,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 55,
+      "TargetButton": -1,
+      "Caption": "L",
+      "Left": 468,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 49,
+      "TargetButton": -1,
+      "Caption": "F",
+      "Left": 228,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 69,
+      "TargetButton": -1,
+      "Caption": "Z",
+      "Left": 108,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 67,
+      "TargetButton": -1,
+      "Caption": "X",
+      "Left": 156,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 46,
+      "TargetButton": -1,
+      "Caption": "C",
+      "Left": 204,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 65,
+      "TargetButton": -1,
+      "Caption": "V",
+      "Left": 252,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 45,
+      "TargetButton": -1,
+      "Caption": "B",
+      "Left": 300,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 56,
+      "TargetButton": -1,
+      "Caption": "M",
+      "Left": 396,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 145,
+      "TargetButton": -1,
+      "Caption": "/",
+      "Left": 540,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 116,
+      "TargetButton": -1,
+      "Caption": "Shift",
+      "Left": 0,
+      "Top": 204,
+      "Width": 108,
+      "Height": 48
+    },
+    {
+      "TargetKey": 117,
+      "TargetButton": -1,
+      "Caption": "Shift",
+      "Left": 636,
+      "Top": 204,
+      "Width": 84,
+      "Height": 48
+    },
+    {
+      "TargetKey": 118,
+      "TargetButton": -1,
+      "Caption": "Ctrl",
+      "Left": 0,
+      "Top": 252,
+      "Width": 108,
+      "Height": 48
+    },
+    {
+      "TargetKey": 119,
+      "TargetButton": -1,
+      "Caption": "Ctrl",
+      "Left": 660,
+      "Top": 252,
+      "Width": 60,
+      "Height": 48
+    },
+    {
+      "TargetKey": 3,
+      "TargetButton": -1,
+      "Caption": "Tab",
+      "Left": 0,
+      "Top": 108,
+      "Width": 72,
+      "Height": 48
+    },
+    {
+      "TargetKey": 18,
+      "TargetButton": -1,
+      "Caption": "",
+      "Left": 300,
+      "Top": 252,
+      "Width": 144,
+      "Height": 48
+    },
+    {
+      "TargetKey": 23,
+      "TargetButton": -1,
+      "Caption": "\u2190",
+      "Left": 744,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 25,
+      "TargetButton": -1,
+      "Caption": "\u2192",
+      "Left": 840,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 24,
+      "TargetButton": -1,
+      "Caption": "\u2191",
+      "Left": 792,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 26,
+      "TargetButton": -1,
+      "Caption": "\u2193",
+      "Left": 792,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 32,
+      "TargetButton": -1,
+      "Caption": "delete",
+      "Left": 744,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 19,
+      "TargetButton": -1,
+      "Caption": "Page\r\nUp",
+      "Left": 792,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 20,
+      "TargetButton": -1,
+      "Caption": "Page\r\nDown",
+      "Left": 792,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 22,
+      "TargetButton": -1,
+      "Caption": "Home",
+      "Left": 840,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 21,
+      "TargetButton": -1,
+      "Caption": " End ",
+      "Left": 840,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 120,
+      "TargetButton": -1,
+      "Caption": "Alt",
+      "Left": 156,
+      "Top": 252,
+      "Width": 72,
+      "Height": 48
+    },
+    {
+      "TargetKey": 31,
+      "TargetButton": -1,
+      "Caption": "Insert",
+      "Left": 744,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 121,
+      "TargetButton": -1,
+      "Caption": "Alt",
+      "Left": 516,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 13,
+      "TargetButton": -1,
+      "Caption": "Esc",
+      "Left": 0,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 70,
+      "TargetButton": -1,
+      "Caption": "Win",
+      "Left": 108,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 71,
+      "TargetButton": -1,
+      "Caption": "Win",
+      "Left": 564,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 8,
+      "TargetButton": -1,
+      "Caption": "CapsLock",
+      "Left": 0,
+      "Top": 156,
+      "Width": 84,
+      "Height": 48
+    },
+    {
+      "TargetKey": 161,
+      "TargetButton": -1,
+      "Caption": "\u534A\u89D2/\u5168\u89D2",
+      "Left": 0,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 90,
+      "TargetButton": -1,
+      "Caption": "F1",
+      "Left": 48,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 91,
+      "TargetButton": -1,
+      "Caption": "F2",
+      "Left": 96,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 92,
+      "TargetButton": -1,
+      "Caption": "F3",
+      "Left": 144,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 93,
+      "TargetButton": -1,
+      "Caption": "F4",
+      "Left": 192,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 94,
+      "TargetButton": -1,
+      "Caption": "F5",
+      "Left": 288,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 95,
+      "TargetButton": -1,
+      "Caption": "F6",
+      "Left": 336,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 96,
+      "TargetButton": -1,
+      "Caption": "F7",
+      "Left": 384,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 97,
+      "TargetButton": -1,
+      "Caption": "F8",
+      "Left": 432,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 98,
+      "TargetButton": -1,
+      "Caption": "F9",
+      "Left": 528,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 99,
+      "TargetButton": -1,
+      "Caption": "F10",
+      "Left": 576,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 100,
+      "TargetButton": -1,
+      "Caption": "F11",
+      "Left": 624,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 101,
+      "TargetButton": -1,
+      "Caption": "F12",
+      "Left": 672,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 115,
+      "TargetButton": -1,
+      "Caption": "Scroll",
+      "Left": 792,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 7,
+      "TargetButton": -1,
+      "Caption": "Pause",
+      "Left": 840,
+      "Top": 0,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 114,
+      "TargetButton": -1,
+      "Caption": "Num\r\nLock",
+      "Left": 912,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 74,
+      "TargetButton": -1,
+      "Caption": "0",
+      "Left": 912,
+      "Top": 252,
+      "Width": 96,
+      "Height": 48
+    },
+    {
+      "TargetKey": 75,
+      "TargetButton": -1,
+      "Caption": "1",
+      "Left": 912,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 76,
+      "TargetButton": -1,
+      "Caption": "2",
+      "Left": 960,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 77,
+      "TargetButton": -1,
+      "Caption": "3",
+      "Left": 1008,
+      "Top": 204,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 78,
+      "TargetButton": -1,
+      "Caption": "4",
+      "Left": 912,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 79,
+      "TargetButton": -1,
+      "Caption": "5",
+      "Left": 960,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 80,
+      "TargetButton": -1,
+      "Caption": "6",
+      "Left": 1008,
+      "Top": 156,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 81,
+      "TargetButton": -1,
+      "Caption": "7",
+      "Left": 912,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 82,
+      "TargetButton": -1,
+      "Caption": "8",
+      "Left": 960,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 83,
+      "TargetButton": -1,
+      "Caption": "9",
+      "Left": 1008,
+      "Top": 108,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 88,
+      "TargetButton": -1,
+      "Caption": ".",
+      "Left": 1008,
+      "Top": 252,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 6,
+      "TargetButton": -1,
+      "Caption": "Enter",
+      "Left": 1056,
+      "Top": 204,
+      "Width": 48,
+      "Height": 96
+    },
+    {
+      "TargetKey": 85,
+      "TargetButton": -1,
+      "Caption": " \u002B ",
+      "Left": 1056,
+      "Top": 108,
+      "Width": 48,
+      "Height": 96
+    },
+    {
+      "TargetKey": 87,
+      "TargetButton": -1,
+      "Caption": "-",
+      "Left": 1056,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 89,
+      "TargetButton": -1,
+      "Caption": "/",
+      "Left": 960,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    },
+    {
+      "TargetKey": 84,
+      "TargetButton": -1,
+      "Caption": "*",
+      "Left": 1008,
+      "Top": 60,
+      "Width": 48,
+      "Height": 48
+    }
+  ],
+  "Width": 1112,
+  "Height": 308
+}
