@@ -6,7 +6,6 @@ public class InputViewModel : ViewModelBase
 {
     public InputViewModel()
     {
-        _targetKey = VirtualKeyCode.None;
     }
 
     private VirtualKeyCode _targetKey;
